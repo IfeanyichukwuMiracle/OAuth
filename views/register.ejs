@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <%- include("./partials/style.ejs") %>
+  </head>
+  <body>
+    <h2>Register</h2>
+    <form action="/auth/register" method="post">
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter Username"
+      />
+      <br />
+      <br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter Email"
+      /><br /><br />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter Password"
+      />
+      <br /><br />
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <br />
+    <%- include ("./partials/auth.ejs") %>
+  </body>
+</html>
