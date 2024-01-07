@@ -46,7 +46,7 @@ app.all("*", (req, res) => {
 // start server
 async function start() {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect(process.env.MONGO_URI2);
     app.listen(process.env.PORT || 5002, () => console.log(`App Started!`));
   } catch (error) {
     return console.log(error);
